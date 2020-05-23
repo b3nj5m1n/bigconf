@@ -1,0 +1,11 @@
+urllib3>=1.23
+certifi
+
+[fastimport]
+fastimport
+
+[https]
+urllib3[secure]>=1.23
+
+[pgp]
+gpg
