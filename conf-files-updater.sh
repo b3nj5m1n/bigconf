@@ -3,6 +3,11 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 USER=/home/$(echo $DIR | cut -d/ -f3)
 
+declare -A loc5=(
+    [name]="icons"
+    [local]="./icons/*"
+    [remote]="$USER/.icons/"
+)
 declare -A loc4=(
     [name]="GTK themes"
     [local]="./gtk/*"
@@ -17,6 +22,16 @@ declare -A loc19=(
     [name]="wallpapers"
     [local]="./wallpapers/.wallpapers/*"
     [remote]="/usr/share/wallpapers/custom/"
+)
+declare -A loc53=(
+    [name]="anki"
+    [local]="./anki/bin/aqt_data/*"
+    [remote]="/usr/share/aqt_data/"
+)
+declare -A loc59=(
+    [name]="anki2"
+    [local]="./Anki2/*"
+    [remote]="$USER/.local/share/Anki2/"
 )
 RED='\033[0;31m'
 GREEN='\033[0;32m'
