@@ -33,11 +33,11 @@ declare -A loc59=(
     [local]="./Anki2/*"
     [remote]="$USER/.local/share/Anki2/"
 )
-declare -A loc60=(
-    [name]="assets"
-    [local]="./assets/*"
-    [remote]="$USER/assets/"
-)
+# declare -A loc60=(
+#     [name]="assets"
+#     [local]="./assets/*"
+#     [remote]="$USER/assets/"
+# )
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 PURPLE='\033[1;35m'
