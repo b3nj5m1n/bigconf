@@ -3,16 +3,16 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 USER=/home/$(echo $DIR | cut -d/ -f3)
 
-declare -A loc5=(
-    [name]="icons"
-    [local]="./icons/*"
-    [remote]="$USER/.icons/"
-)
-declare -A loc4=(
-    [name]="GTK themes"
-    [local]="./gtk/*"
-    [remote]="$USER/.themes/"
-)
+# declare -A loc5=(
+#     [name]="icons"
+#     [local]="./icons/*"
+#     [remote]="$USER/.icons/"
+# )
+# declare -A loc4=(
+#     [name]="GTK themes"
+#     [local]="./gtk/*"
+#     [remote]="$USER/.themes/"
+# )
 declare -A loc12=(
     [name]="icon locks"
     [local]="./icons/*"
